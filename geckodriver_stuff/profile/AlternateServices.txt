@@ -1,0 +1,6 @@
+https:push.services.mozilla.com:443:.::3	1	19547	https:push.services.mozilla.com:443:push.services.mozilla.com:443::n:1691501776:h3:y:1688738926:n::|n:y:
+https:archive.mozilla.org:443:.::3	0	19545	https:archive.mozilla.org:443:archive.mozilla.org:443::n:1688738960:h3:n:1688738926:n::|n:y:
+https:safebrowsing.googleapis.com:443:.:^firstPartyDomain=safebrowsing.86868755-6b82-4842-b301-72671a0db32e.mozilla:3	1	19547	https:safebrowsing.googleapis.com:443:safebrowsing.googleapis.com:443::n:1691496035:h3:y:1688738926:n:^firstPartyDomain=safebrowsing.86868755-6b82-4842-b301-72671a0db32e.mozilla:|n:y:
+https:versioncheck-bg.addons.mozilla.org:443:.::3	0	19545	https:versioncheck-bg.addons.mozilla.org:443:versioncheck-bg.addons.mozilla.org:443::n:1691330958:h3:y:1688738926:n::|n:y:
+https:firebaseinstallations.googleapis.com:443:.:^partitionKey=%28https%2Ctiktok.com%29:3	0	19545	https:firebaseinstallations.googleapis.com:443:firebaseinstallations.googleapis.com:443::n:1691330967:h3:y:1688738926:n:^partitionKey=%28https%2Ctiktok.com%29:|n:y:
+https:storage.googleapis.com:443:.:^partitionKey=%28https%2Ctiktok.com%29:3	0	19545	https:storage.googleapis.com:443:storage.googleapis.com:443::n:1691330965:h3:y:1688738926:n:^partitionKey=%28https%2Ctiktok.com%29:|n:y:

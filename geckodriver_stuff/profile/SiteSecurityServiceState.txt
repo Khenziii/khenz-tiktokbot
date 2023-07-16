@@ -1,0 +1,4 @@
+firefox.settings.services.mozilla.com:HSTS	0	19547	1720441706529,1,0
+incoming.telemetry.mozilla.org:HSTS	0	19547	1720440935295,1,0
+contile.services.mozilla.com:HSTS	0	19547	1720441687341,1,0
+aus5.mozilla.org:HSTS	0	19547	1720441707742,1,0
