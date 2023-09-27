@@ -40,18 +40,32 @@ def post(path: str, caption: str, tags: list = ["redditstories", "fyp", "foryoup
     time.sleep(30)
 
     # select the iframe element
-    iframe_element = driver.find_element(By.XPATH, "//iframe[@src='https://www.tiktok.com/creator#/upload?lang=en']")
+    try:
+        iframe_element = driver.find_element(By.XPATH, "//iframe[@src='https://www.tiktok.com/creator#/upload?scene=creator_center']")
+    except Exception as e:
+        print(f"[---] Oops, something went wrong while trying to get the iframe element. This could be caused by tiktok updating their's HTML structure. To fix this error, you most likely have to go to https://www.tiktok.com/creator-center/upload?lang=en select the appropiate element identifier, and update it :) (file browser.py, line 44). If you'll encounter new problems, don't be shy to create a github issue. Exception: {e}")
+        return
     driver.switch_to.frame(iframe_element)
 
     # select the select file input
-    select_input = driver.find_element(By.CSS_SELECTOR, 'input.jsx-1625145290')
+    try:
+        select_input = driver.find_element(By.CSS_SELECTOR, 'input.jsx-2207703846')
+    except Exception as e:
+        print(f"[---] Oops, something went wrong while trying to get the path input element. This could be caused by tiktok updating their's HTML structure. To fix this error, you most likely have to go to https://www.tiktok.com/creator-center/upload?lang=en select the appropiate element identifier, and update it :) (file browser.py, line 51). If you'll encounter new problems, don't be shy to create a github issue. Exception: {e}")
+        return
+
     # write the path to the select input
     select_input.send_keys(path)
 
     print("[+] entered the path to the video")
 
     # select the caption input box
-    caption_input = driver.find_element(By.CSS_SELECTOR, '.notranslate')
+    try:
+        caption_input = driver.find_element(By.CSS_SELECTOR, '.notranslate')
+    except Exception as e:
+        print(f"[---] Oops, something went wrong while trying to get the caption input element. This could be caused by tiktok updating their's HTML structure. To fix this error, you most likely have to go to https://www.tiktok.com/creator-center/upload?lang=en select the appropiate element identifier, and update it :) (file browser.py, line 62). If you'll encounter new problems, don't be shy to create a github issue. Exception: {e}")
+        return
+
     # write the caption
     caption_input.send_keys(caption)
 
@@ -69,7 +83,13 @@ def post(path: str, caption: str, tags: list = ["redditstories", "fyp", "foryoup
     print("[i] waiting for tiktok to fetch the video...")
     # Wait until the button is clickable
     wait = WebDriverWait(driver, 300)
-    post_button = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, 'button.css-y1m958')))
+
+    # select the post button
+    try:
+        post_button = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, 'button.css-y1m958')))
+    except Exception as e:
+        print(f"[---] Oops, something went wrong while trying to get the post button element. This could be caused by tiktok updating their's HTML structure. To fix this error, you most likely have to go to https://www.tiktok.com/creator-center/upload?lang=en select the appropiate element identifier, and update it :) (file browser.py, line 86). If you'll encounter new problems, don't be shy to create a github issue. Exception: {e}")
+        return
 
     # click the post button
     post_button.click()
