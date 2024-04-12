@@ -13,7 +13,7 @@ filelock==3.12.2
 future==0.18.3
 gTTS==2.3.2
 h11==0.14.0
-idna==3.4
+idna==3.7
 imageio==2.31.1
 imageio-ffmpeg==0.4.8
 Jinja2==3.1.3
