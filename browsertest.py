@@ -4,8 +4,6 @@ from selenium.webdriver.firefox.service import Service
 import os
 
 
-os.environ['TMPDIR'] = os.path.expanduser("~/tmp/khenz-tiktokbot")
-
 profile_path = os.path.abspath("geckodriver_stuff/profile/")
 options = Options()
 options.add_argument("-profile")

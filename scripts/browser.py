@@ -10,8 +10,6 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.firefox.service import Service
 
 
-os.environ['TMPDIR'] = os.path.expanduser("~/tmp/khenz-tiktokbot")
-
 options = Options()
 options.add_argument("--headless")
 options.add_argument("-profile")
