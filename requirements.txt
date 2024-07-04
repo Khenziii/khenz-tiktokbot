@@ -27,7 +27,7 @@ numba==0.57.1
 numpy==1.24.0
 openai-whisper==20230314
 outcome==1.2.0
-Pillow==10.3.0
+Pillow==9.4.0
 praw==7.7.1
 prawcore==2.3.0
 proglog==0.1.10
