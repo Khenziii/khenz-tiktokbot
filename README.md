@@ -9,7 +9,7 @@ As of 04/07/2024, it's been over a year since I have written this code. Looking 
 5. The code should follow basic conventions. Such as:
 - DRY ("don't repeat yourself") principle. An example of this is the `without_post.py` file, which could be easily included in `main.py` (the posting behaviour should be controlled via a setting),
 - hardcoding secrets. Reddit's API credentials should be stored in a environment variable.
-- overwriting OS's environment variables. I have no idea why I did this, but overwriting `$TMPDIR` is for sure a mistake.
+- ~~overwriting OS's environment variables. I have no idea why I did this, but overwriting `$TMPDIR` is for sure a mistake.~~ This was fixed in [a889ceb](https://github.com/Khenziii/khenz-tiktokbot/commit/a889ceb69d4af9f249b36d4aadae6e8c494f2dd5).
 
 However, this doesn't mean that the app shouldn't be used at all! It's still functional. I probably won't ever bother to improve this old codebase, however if you'd like to contribute, I'm always going to happily review PRs!
 
