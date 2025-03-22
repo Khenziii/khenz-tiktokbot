@@ -11,7 +11,7 @@ As of 04/07/2024, it's been over a year since I have written this code. Looking 
 - hardcoding secrets. Reddit's API credentials should be stored in a environment variable.
 - ~~overwriting OS's environment variables. I have no idea why I did this, but overwriting `$TMPDIR` is for sure a mistake.~~ This was fixed in [a889ceb](https://github.com/Khenziii/khenz-tiktokbot/commit/a889ceb69d4af9f249b36d4aadae6e8c494f2dd5).
 
-However, this doesn't mean that the app shouldn't be used at all! It's still functional. I probably won't ever bother to improve this old codebase, however if you'd like to contribute, I'm always going to happily review PRs!
+However, this doesn't mean that the app shouldn't be used at all! It's still functional. You might stumble across some issues caused by lack of maintenance, however I guess that it still is pretty useful.
 
 ## khenz-tiktokbot
 
